@@ -12,9 +12,9 @@ import os
 import cv2
 import argparse
 import sys
-
+TOKEN = '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' # Change the token as it might be out-dated
 class ModelInference:
-    def __init__(self, model_id, device, hf_auth = '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'):
+    def __init__(self, model_id, device, hf_auth = TOKEN):
         self.model_id = model_id
         self.device = device
         # begin initializing HF items, you need an access token
